@@ -13,7 +13,13 @@ class EmpresasController extends Controller
     {
         $this->parser = new ParseController();
     }
-    
+
+    public function index(){
+        $sql = new \Models\Empresas();
+        $response = $sql->getAllEmpresas('nome,last,vol,data_atualizacao,img');
+        $this->returnJson($response, 200);
+    }
+
     public function updateValuesCron()
     {
         $sql = new \Models\Empresas();
