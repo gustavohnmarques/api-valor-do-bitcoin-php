@@ -9,5 +9,6 @@
     $routes = array();
 
     //Cofiguração das rotas
-    $routes['/teste'] = '/home/teste';
+    $routes['/empresas/update/3JHLP7UG3aGDkyB'] = '/empresas/updateValuesCron';
+    $routes['/empresas'] = '/empresas';
 ?>
