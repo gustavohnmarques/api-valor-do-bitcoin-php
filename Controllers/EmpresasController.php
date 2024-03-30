@@ -16,7 +16,7 @@ class EmpresasController extends Controller
 
     public function index(){
         $sql = new \Models\Empresas();
-        $response = $sql->getAllEmpresas('nome,last,vol,data_atualizacao,img');
+        $response = $sql->getAllEmpresas('id,nome,last,vol,data_atualizacao,img');
         $this->returnJson($response, 200);
     }
 
